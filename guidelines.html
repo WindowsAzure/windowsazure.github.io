@@ -1,12 +1,74 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta content="text/html; charset=ISO-8859-1"
-      http-equiv="Content-Type">
-    <title>Windows Azure Projects Contribution Guidelines</title>
+    <meta charset="utf-8">
+    <title>Open Source Contribution Guidelines - Windows Azure Open Source</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information on support and contacts for the Windows Azure open source SDK team.">
+    <meta name="author" content="Windows Azure SDK">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+    <link rel="shortcut icon" href="//az83882.vo.msecnd.net/favicon.ico">
   </head>
+
   <body>
-    <h1>Contribution Guidelines Overview</h1>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" style="padding:15px 15px 5px 15px;margin-top:-5px" href="//www.windowsazure.com/"><img 
+              src="azure/windowsazurelogo.png" style="width:218px;height:35px;border:0px"
+              alt="Windows Azure" title="Windows Azure" /></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Open Source Home</a></li>
+              <li><a href="guidelines.html" class="active">Contribution Guidelines</a></li>
+              <li class="dropdown">
+                <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-header">Software Dev Kits</li>
+                  <li><a href="projects.html#dotnet">.NET SDK</a></li>
+                  <li><a href="projects.html#nodejs">Node.js SDK</a></li>
+                  <li><a href="projects.html#java">Java SDK</a></li>
+                  <li><a href="projects.html#php">PHP SDK</a></li>
+                  <li><a href="projects.html#python">Python SDK</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">More Projects</li>
+                  <li><a href="projects.html#iisnode">iisnode</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">WindowsAzure.com</li>
+                  <li><a href="//www.windowsazure.com/en-us/documentation/">Documentation Center</a></li>
+                  <li><a href="//www.windowsazure.com/en-us/develop/reference/">REST Reference</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+    <h2>Contribution Guidelines Overview</h2>
     <p>If you would like to become involved in the development of
       Windows Azure SDKs and Tools there are many different ways in
       which you can contribute. We strongly value user feedback and will
@@ -18,7 +80,7 @@
       For more details how to do this please see section <a
         href="#contributing">Contributing changes</a> below.<br>
     </p>
-    <h1 id="feedback">Using the product and providing feedback</h1>
+    <h2 id="feedback">Using the product and providing feedback</h2>
     <p>Using the Windows Azure SDKs and Tools, asking and answering
       question, reporting bugs and making feature requests are critical
       parts of the project community. User feedback is crucial for
@@ -35,7 +97,7 @@
         href="#bugsandfeatures">Report bugs and request features</a>
       below). <br>
     </p>
-    <h2 id="askingquestions">Asking and answering questions</h2>
+    <h3 id="askingquestions">Asking and answering questions</h3>
     <p>The easiest way to ask questions is to use the <a
         href="http://www.windowsazure.com/en-us/support/forums/">Windows
         Azure SDK and Tools forums</a> on StackOverflow and MSDN. If
@@ -43,15 +105,15 @@
       discussion are on MSDN. For all other languages please use
       StackOverflow.<br>
     </p>
-    <h2 id="binaries">Obtaining the binaries<br>
-    </h2>
+    <h3 id="binaries">Obtaining the binaries<br>
+    </h3>
     <p>Pre-compiled binaries of Windows Azure SDK and Tools are
       available on the Windows Azure web site at <a
         href="http://www.windowsazure.com/en-us/develop/downloads/">http://www.windowsazure.com/en-us/develop/downloads/</a>.
       Select the lnaguage you are interested in (.NET, Node, Java or
       PHP) and click on the Install button.<br>
     </p>
-    <h2 id="sourcecode">Obtaining the source code</h2>
+    <h3 id="sourcecode">Obtaining the source code</h3>
     <p>In order to obtain the source code you need to become familiar
       with Git (see <a href="http://progit.org/book/">http://progit.org/book/</a>)
       and Github (see <a href="http://help.github.com/">http://help.github.com/</a>)
@@ -67,7 +129,7 @@
         <code>git clone git@github.com:[USERNAME]/[PROJECT]</code><br>
       </li>
     </ol>
-    <h2 id="reportbugs">Report bugs and request features</h2>
+    <h3 id="reportbugs">Report bugs and request features</h3>
     <p>Issues and feature requests are submitted through the project's
       Issues section on GitHub. Please use the following guidelines when
       you submit issues and feature requests:<br>
@@ -93,9 +155,9 @@
       questions about particular issue that might need clarifications
       so, please be ready to provide additional information.<br>
     </p>
-    <h1 id="contributing">Contributing changes<br>
-    </h1>
-    <h2>How to become a contributor?</h2>
+    <h2 id="contributing">Contributing changes<br>
+    </h2>
+    <h3>How to become a contributor?</h3>
     <p>In order to become a contributor to the project we need you to
       sign the Contributor License Agreement (CLA). Signing the
       Contributor License Agreement (CLA) does not grant you rights to
@@ -110,7 +172,7 @@
       sign, scan and email it to <a href="mailto:cla@microsoft.com?subject=New CLA from Community Member" 
 	  title="Email signed Contribution License Agreement to Microsoft">cla@microsoft.com</a>.<br>
     </p>
-    <h2>Checkout the latest code</h2>
+    <h3>Checkout the latest code</h3>
     <p>In order to obtain the source code you need to become familiar
       with Git (see <a href="http://progit.org/book/">http://progit.org/book/</a>)
       and Github (see <a href="http://help.github.com/">http://help.github.com/</a>)
@@ -137,8 +199,8 @@
 		git merge upstream/dev
         </code></li>
     </ol>
-    <h2>Create bug fixes and features<br>
-    </h2>
+    <h3>Create bug fixes and features<br>
+    </h3>
     <p>You make modifications of the code in your local Git repository.
       Once you are done with your implementation follow the steps below:<br>
     </p>
@@ -168,7 +230,7 @@
       request is rejected you will receive information about the reasons
       why it was rejected.<br>
     </p>
-    <h2>Contribution guidelines</h2>
+    <h3>Contribution guidelines</h3>
     <p>Before you start working on bug fixes and features it is good
       idea to discuss those broadly with the community. You can use the
       forums as described in <a href="#askingquestions">Asking and
@@ -189,5 +251,12 @@
 	In order to speed up the process of accepting your contributions, you
 	should try to make your checkins as small as possible, avoid any unnecessary
 	deltas and the need to rebase.
+
+
+    </div> <!-- /container -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
