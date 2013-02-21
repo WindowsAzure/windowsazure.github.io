@@ -16,7 +16,7 @@
 
     <style type="text/css">
       body {
-        padding-top: 60px;
+        padding-top: 90px;
         padding-bottom: 40px;
       }
     </style>
@@ -42,7 +42,7 @@
               <li><a href="index.html">Open Source Home</a></li>
               <li><a href="guidelines.html" class="active">Contribution Guidelines</a></li>
               <li class="dropdown">
-                <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                <a href="projects.html" class="dropdown-toggle active" data-toggle="dropdown">Projects <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li class="nav-header">Software Dev Kits</li>
                   <li><a href="projects.html#dotnet">.NET SDK</a></li>
@@ -68,31 +68,112 @@
 
     <div class="container">
 
-	<h2>Windows Azure Projects on Github</h2>
-	<p>Here is an overview of all Windows Azure projects hosted on Github. 
-	For additional information about Windows Azure and the services it offers
-	you can visit <a href="http://www.windowsazure.com">www.windowsazure.com</a><br/>
-	If you are interested in contributing to any of the projects below please
-	read the <a href="./guidelines.html">Contribution Guidelines</a> first.</p>
-	<h3><a href="https://github.com/WindowsAzure/azure-sdk-for-java">WindowsAzure/azure-sdk-for-java</a></h3>
-	<p>This repository contains Java libraries that allow you to take advantage of
-	Windows Azure's scalable cloud computing resources like table and blob storage as
-	well as Service Bus messaging.</p>
-	<h3><a href="https://github.com/WindowsAzure/azure-sdk-for-net">WindowsAzure/azure-sdk-for-net</a></h3>
-	<p>This repository contains .NET libraries that allow you to take advantage of
-	Windows Azure's scalable cloud computing resources like table and blob storage, messaging 
-	through Service Bus and distributed caching.</p>
-	<h3><a href="https://github.com/WindowsAzure/azure-sdk-for-node">WindowsAzure/azure-sdk-for-node</a></h3>
-	<p>This repository contains a set of Node.js packages that make it 
-	easy to access the Windows Azure storage and queue services.</p>
-	<h3><a href="https://github.com/WindowsAzure/azure-sdk-tools">WindowsAzure/azure-sdk-tools</a></h3>
-	<p>This repository contains a set of PowerShell commandlets that let you 
-	deploy Node.js application to Windows Azure from the command line.</p>
-	<h3><a href="https://github.com/WindowsAzure/iisnode">WindowsAzure/iisnode</a></h3>
-	<p>This repository contains an IIS extension that allows you to host Node.js 
-	applications on Windows.</p>
+        <p>This page contains information about the open source aspect of many 
+        of the Windows Azure SDKs, frameworks &amp; tools. If you want to use 
+        the released versions of these products to develop your applications, 
+        please visit <a href="http://www.windowsazure.com/en-us/documentation/">//windowsazure.com/documentation/</a> 
+        to find official installers, documentation, package manager links, samples and videos.</p>
 
+        <p>These products are actively developed by the Windows Azure SDK team in 
+            collaboration with our open source community.</p>
 
+        <p>Together we are dedicated to creating the best possible experience for 
+        developers creating amazing experiences that are built on the world-class 
+            infrastructure, platforms and frameworks that make up Windows Azure.</p>
+
+	    <h2>Open Source SDKs</h2>
+
+	    <p>Here is an overview of all Windows Azure projects hosted on Github. 
+	    For additional information about Windows Azure and the services it offers
+	    you can visit <a href="http://www.windowsazure.com">www.windowsazure.com</a><br/>
+	    If you are interested in contributing to any of the projects below please
+	    read the <a href="./guidelines.html">Contribution Guidelines</a> first.</p>
+
+	    <h3><a id="java" href="https://github.com/WindowsAzure/azure-sdk-for-java">./azure-sdk-for-java/</a></h3>
+	    <p>This repository contains Java libraries that allow you to take advantage of
+	    Windows Azure's scalable cloud computing resources like table and blob storage as
+	    well as Service Bus messaging.</p>
+	    
+        <h3><a id="dotnet" href="https://github.com/WindowsAzure/azure-sdk-for-net">./azure-sdk-for-net/</a></h3>
+	    <p>This repository contains .NET libraries that allow you to take advantage of
+	    Windows Azure's scalable cloud computing resources like table and blob storage, messaging 
+	    through Service Bus and distributed caching.</p>
+	    
+        <h3><a id="nodejs" href="https://github.com/WindowsAzure/azure-sdk-for-node">./azure-sdk-for-node/</a></h3>
+	    <p>This repository contains a set of Node.js packages that make it 
+	    easy to access the Windows Azure storage and queue services.</p>
+
+        <ul>
+            <li><strong>./node-sqlserver/: </strong>A Node.js driver that uses ODBC to communicate with SQL Azure.</li>
+            <li><strong>./socket.io-servicebus/: </strong>Node.js adapter for Service Bus</li>
+        </ul>
+
+        <h3><a id="php" href="https://github.com/WindowsAzure/azure-sdk-for-php">./azure-sdk-for-php/</a></h3>
+	    <p>The Windows Azure SDK for PHP developers.</p>
+        
+        <h3><a id="python" href="https://github.com/WindowsAzure/azure-sdk-for-python">./azure-sdk-for-python/</a></h3>
+	    <p>The Windows Azure SDK for Python.</p>
+
+        <h2>Command Line Experiences</h2>
+	    
+        <h3><a id="powershell" href="https://github.com/WindowsAzure/azure-sdk-tools">./azure-sdk-tools/</a></h3>
+	    <p>This repository contains a set of PowerShell commandlets that let you 
+	    deploy applications to Windows Azure using PowerShell.</p>
+
+        <h3><a id="xplat" href="https://github.com/WindowsAzure/azure-sdk-tools-xplat">./azure-sdk-tools-xplat/</a></h3>
+	    <p>The cross-platform command line interface (xplat CLI) is written in 
+            Node.js (JavaScript) and lets you deploy apps to Windows Azure on 
+            your Mac, PC, or Linux box.</p>
+
+        <h3><a id="mobileservices" href="https://github.com/WindowsAzure/azure-mobile-services">./azure-mobile-services/</a></h3>
+	    <p>With Windows Azure Mobile Services you can develop amazing Windows 8, Windows Phone, and iOS apps 
+        that use the cloud.</p>
+
+        <ul>
+            <li><strong>./wns/: </strong>Node.js framework for sending Windows Notification Service (WNS) messages to Windows 8 devices.</li>
+        </ul>
+
+        <h2>Other Projects</h2>
+
+	    <h3><a id="iisnode" href="https://github.com/WindowsAzure/iisnode">./iisnode/</a></h3>
+	    <p>This repository contains an IIS extension that allows you to host Node.js 
+	    applications on Windows.</p>
+
+        <h2>Open Source Documentation</h2>
+
+	    <h3><a id="azure-content" href="https://github.com/WindowsAzure/azure-content">./azure-content/</a></h3>
+	    <p>Markdown-based documentation for the Windows Azure web site's developer 
+        content.</p>
+
+        <h2>Other Microsoft Teams of note</h2>
+
+        <p>The Server &amp; Tools business at Microsoft has a lot of great open source products 
+        that you might want to consider contributing to. Note that these products may have different 
+        guidelines for contributions of open source than the Windows Azure SDK.</p>
+
+        <h3>NuGet</h3>
+
+        <h3>Kudu</h3>
+
+        <h3>ASP.NET Web Stack</h3>
+
+      <hr>
+
+      <footer>
+        <p class="pull-right"><a href="#top">Back to top</a></p>
+        <div class="links">
+          <a href="//www.windowsazure.com/">WindowsAzure.com</a> |
+          <a href="http://blogs.msdn.com/b/windowsazure/">Windows Azure Blog</a> |
+          <a href="https://twitter.com/windowsazure">@windowsazure</a> |
+          <a href="https://github.com/windowsazure/">GitHub</a> 
+        </div>
+
+        <p><small>
+            &copy; Microsoft | 
+            <a href="http://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409">Privacy and Cookies</a> |
+            <a href="http://go.microsoft.com/fwlink/p/?linkid=222682&clcid=0x409">Trademarks</a>
+            </small></p>
+      </footer>
 
     </div> <!-- /container -->
 
