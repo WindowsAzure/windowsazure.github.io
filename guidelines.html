@@ -24,7 +24,7 @@
     <link rel="shortcut icon" href="//az83882.vo.msecnd.net/favicon.ico">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".sidebar-nav">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
@@ -71,34 +71,40 @@
     <div class="container">
         <div class="row">
             <div class="span3">
-                <div class="sidebar-nav" style="padding: 16px 0;">
-                    <ul class="nav nav-list">
-                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Ways to contribute</a></li>
+                <div class="sidebar-nav" style="padding: 20px 0;">
+                    <ul class="nav nav-list affix" style="width: 195px">
+                        <li class="active"><a href="#waystocontribute"><i class="icon-chevron-right"></i>Ways to contribute</a></li>
                         <li class="nav-header">Community member</li>
-                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Opening issues</a></li>
-                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Feature requests</a></li>
-                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Forums</a></li>
+                        <li><a href="#source"><i class="icon-chevron-right"></i>Source code</a></li>
+                        <li><a href="#forums"><i class="icon-chevron-right"></i>Q&amp;A forums</a></li>
+                        <li><a href="#issues"><i class="icon-chevron-right"></i>Opening issues</a></li>
+                        <li><a href="#features"><i class="icon-chevron-right"></i>Feature requests</a></li>
                         <li class="nav-header">OSS Development</li>
                         <li><a href="#contributing"><i class="icon-chevron-right"></i>Guidelines</a></li>
-                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>CLA</a></li>
-                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Step-by-step</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Contact the team</a></li>
+                        <li><a href="#cla"><i class="icon-chevron-right"></i>CLA</a></li>
+                        <li><a href="#process"><i class="icon-chevron-right"></i>Step-by-step</a></li>
+                        <li><a href="#contact"><i class="icon-chevron-right"></i>Contact the team</a></li>
+                        <li class="nav-header">Join our team</li>
+                        <li><a href="#jobs"><i class="icon-chevron-right"></i> Azure is hiring</a></li>
                     </ul>
                 </div>
             </div>
             <div class="span9">
-                <h2 id="waystocontribute">Ways to contribute</h2>
+                <section id="waystocontribute">
+                <h2>Ways to contribute</h2>
                 <p>
                     If you would like to become involved in the development of
                     Windows Azure SDKs and Tools there are many different ways 
                     in which you can contribute. We strongly value your 
-                    feedback, questions, bug reports, and feature requests. 
+                    feedback, questions, bug reports, and feature requests.
+                    </p>
                     
-                    Consider these options:
-                </p>
+                    <p>
+                        Consider these options:
+                    </p>
 
                 <ul>
+                    <li><a href="//www.windowsazure.com/en-us/develop/downloads/">Use the products</a></li>
                     <li>Submit a 
                         <a href="//github.com/windowsazure/">GitHub issue</a> 
                         to the appropriate repo (for a guide on submitting good
@@ -113,48 +119,10 @@
                     <li>Submit another unit test.</li>
                     <li>Tell others about these projects.</li>
                 </ul>
+                </section>
 
-                <h2 id="feedback">Using the product and providing feedback</h2>
-                <p>
-                    Using the Windows Azure SDKs and Tools, asking and answering
-                    question, reporting bugs and making feature requests are critical
-                    parts of the project community. User feedback is crucial for
-                    improving the quality of the products and drive further
-                    development.
-                    <br/>
-                    
-                    In order to become familiar with the functionality you can
-                    download the pre-compiled binaries (see 
-                    <a href="#binaries">Obtaining the binaries</a> below) 
-                    or sync the source code from Github and compile locally (see 
-                    <a href="#sourcecode">Obtaining the source code</a> below). 
-                    
-                    Once you become familiar with the functionality      
-                    you can report bugs or request new features (see 
-                    <a href="#bugsandfeatures">Report bugs and request features</a>
-                    below).
-                </p>
-
-                <h3 id="askingquestions">Asking and answering questions</h3>
-                <p>
-                    The easiest way to ask questions is to use the <a
-                    href="http://www.windowsazure.com/en-us/support/forums/">Windows Azure SDK and Tools forums</a> 
-                    on StackOverflow and MSDN. If your target language is .NET 
-                    the most appropriate forums for discussion are on MSDN. 
-                    
-                    For all other languages please use StackOverflow.
-                </p>
-
-                <h3 id="binaries">Obtaining the binaries</h3>
-                <p>
-                    Pre-compiled binaries of Windows Azure SDK and Tools are
-                    available on the Windows Azure web site at <a
-                    href="http://www.windowsazure.com/en-us/develop/downloads/">http://www.windowsazure.com/en-us/develop/downloads/</a>.
-                    Select the language you are interested in (.NET, Node.js, 
-                    PHP, Java, Python) and click on the Install button.
-                </p>
-
-                <h3 id="sourcecode">Obtaining the source code</h3>
+                <section id="source">
+                <h3>Source code</h3>
                 <p>
                     In order to obtain the source code you need to become familiar
                     with Git (see <a href="http://progit.org/book/">http://progit.org/book/</a>)
@@ -173,8 +141,22 @@
                         <code>git clone git@github.com:[USERNAME]/[PROJECT]</code>
                     </li>
                 </ol>
+                </section>
 
-                <h3 id="reportbugs">Report bugs and request features</h3>
+                <section id="forums">
+                <h3>Q&amp;A forums</h3>
+                <p>
+                    The easiest way to ask questions is to use the <a
+                    href="http://www.windowsazure.com/en-us/support/forums/">Windows Azure SDK and Tools forums</a> 
+                    on StackOverflow and MSDN. If your target language is .NET 
+                    the most appropriate forums for discussion are on MSDN. 
+                    
+                    For all other languages please use StackOverflow.
+                </p>
+                </section>
+
+                <section id="issues">
+                <h3>Reporting bugs &amp; issues</h3>
                 <p>
                     Issues and feature requests are submitted through the project's
                     Issues section on GitHub. Please use the following guidelines when
@@ -203,10 +185,28 @@
       questions about particular issue that might need clarifications
       so, please be ready to provide additional information.<br>
                 </p>
+                </section>
+
+                <section id="features">
+                <h3>Feature requests</h3>
+                <p>
+                </p>
+                </section>
 
 
-                <h2 id="contributing">Contributing changes<br>
-                </h2>
+
+
+
+
+                <hr />
+
+
+
+
+
+
+
+                <h2 id="contributing">Contributing changes</h2>
 
                 <div class="alert alert-info">
                     <!-- <a class="close">&times;</a> -->
@@ -299,6 +299,8 @@
       request is rejected you will receive information about the reasons
       why it was rejected.<br>
                 </p>
+
+                <section id="contribute">
                 <h3>Contribution guidelines</h3>
                 <p>
                     Before you start working on bug fixes and features it is good
@@ -321,8 +323,28 @@
                 In order to speed up the process of accepting your contributions, you
 	should try to make your checkins as small as possible, avoid any unnecessary
 	deltas and the need to rebase.
+    
+                </section>
 
-                    
+                <section id="contact">
+                <h3>Contact the team</h3>
+
+                <p>tbd</p>
+                
+                </section> 
+
+                <hr />
+
+                <section id="jobs">
+                <h3>Jobs</h3>
+
+                <p>Microsoft is always hiring bright and talented students &amp; 
+                professionals. Please consider submitting your resume and 
+                applying for open positions at 
+                <a href="//careers.microsoft.com/">//careers.microsoft.com</a>.</p>
+                
+                </section> 
+                                                   
             </div>
         </div>
 
