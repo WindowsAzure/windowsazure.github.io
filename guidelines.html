@@ -74,9 +74,10 @@
                         <li><a href="#issues"><i class="icon-chevron-right"></i>Opening issues</a></li>
                         <li><a href="#features"><i class="icon-chevron-right"></i>Feature requests</a></li>
                         <li class="nav-header">OSS Development</li>
-                        <li><a href="#contributing"><i class="icon-chevron-right"></i>Guidelines</a></li>
+                        <li><a href="#contributing"><i class="icon-chevron-right"></i>Contributing code</a></li>
                         <li><a href="#cla"><i class="icon-chevron-right"></i>Legal / CLA</a></li>
                         <li><a href="#stepbystep"><i class="icon-chevron-right"></i>Step-by-step</a></li>
+                        <li><a href="#codereviews"><i class="icon-chevron-right"></i>Code reviews</a></li>
                         <li><a href="#contact"><i class="icon-chevron-right"></i>Contact the team</a></li>
                         <li class="nav-header">Join our team</li>
                         <li><a href="#jobs"><i class="icon-chevron-right"></i> Azure is hiring</a></li>
@@ -111,12 +112,13 @@
                     <li>Help answer questions on forums such as StackOverflow.</li>
                     <li>Submit a unit test.</li>
                     <li>Submit another unit test.</li>
+                    <li>Code review pending pull requests and bug fixes.</li>
                     <li>Tell others about these projects.</li>
                 </ul>
                 </section>
 
                 <section id="source">
-                <h3>Source code</h3>
+                <h3>Get the source code</h3>
                 <p>
                     Our source is developed &amp; published on GitHub.com 
                     (<a href="//help.github.com/">learn more</a>).
@@ -209,8 +211,6 @@
 
 
                 <section id="contributing">
-                <h2>Contributing changes</h2>
-
                 <div class="alert alert-info">
                     <!-- <a class="close">&times;</a> -->
                     <strong>Note:</strong> A Contribution Legal Agreement (CLA) is 
@@ -218,15 +218,68 @@
                     pull requests. Please read this entire page carefully.
                 </div>
 
-                <h4>Guidelines</h4>
+                <h2>Contributing code</h2>
+
                 <p>
-                    Before you start working on bug fixes and features it is good
-      idea to discuss those broadly with the community. You can use the
-      forums as described in <a href="#askingquestions">Asking and
-        answering questions</a> for this purpose.<br>
-                    Before submitting your changes make sure you followed the
-      guidelines below:<br>
+                    From an engineering standpoint, please make sure that you can 
+                    build and test the code. Familiarize yourself with our 
+                    project guidelines and coding conventions.
                 </p>
+
+                <p>
+                    The SDK team also recommends that you read these great 
+                    posts about open source:
+                </p>
+                <ul>
+                    <li><a href="http://tirania.org/blog/archive/2010/Dec-31.html">Open Source Contribution Etiquette</a> by Miguel de Icaza</li>
+                    <li><a href="http://www.igvita.com/2011/12/19/dont-push-your-pull-requests/">Don't &quot;Push&quot; Your Pull Requests</a> by Ilya Grigorik</li>
+                    <li><a href="http://nvie.com/posts/a-successful-git-branching-model/">A Successful Git Branching Model</a> by Vincent Driessen</li>
+                </ul>
+
+                <p><em>
+                    If you have ever considered contributing to the <a 
+                    href="http://aspnetwebstack.codeplex.com/wikipage?title=Contributing">ASP.NET Web Stack</a>,
+                    we have modeled much of this process on that project.</em></p>
+
+                <p>
+                    Before you start working on a feature or substantial code 
+                    contribution please <a href="contact.html">discuss it</a> with 
+                    the team and ensure it is an appropriate addition to the core 
+                    product.
+                 </p>
+
+                <p>
+                    Note that code submissions will be rigorously reviewed and 
+                    tested by the Windows Azure SDK Team (or the appropriate 
+                    Azure service owners), and only contributions that meet 
+                    an extremely high bar for both quality and design/roadmap 
+                    appropriateness will be merged into the source.</p>
+
+                <p>
+                    In some situations Microsoft employees may engage with you 
+                    to review design decisions and mitigate issues as part of 
+                    the contribution process. Understand that in some situations, 
+                    developers inside Microsoft may decide to decline your 
+                    pull request and instead log the issue for a future 
+                    product milestone or bug fix. The team will provide 
+                    information in the pull in these situations and still 
+                    thank you for your contribution.
+                </p>
+
+                <p>
+                      For bug fixes, simply start a conversation in the related 
+                GitHub issue to notify the team and chat about the design of 
+                the fix if needed.</p>
+
+                 <p>
+                    There are many opportunities to build value-add services and 
+                     frameworks that do not need to direct alterations to the 
+                     SDKs and products: NuGet packages for .NET or NPM modules 
+                     for Node.js devs can easily take a dependency on the core 
+                     SDK components, for example.
+                 </p> 
+                    
+                    
                 <ul>
                     <li>You have properly documented any new functionality using the
         documentation standards for the language (this includes clasees,
@@ -322,6 +375,15 @@
                     requests typically remains with the SDK team to ensure 
                     that contributions to master are thoroughly reviewed.
                 </p>
+
+                <p>
+                    Please configure your Git client with a name and email 
+                    address to use for your commits. This will also help the 
+                    team validate your CLA status:
+
+                    <pre>git config user.name Your Name
+git config user.email YourAlias@YourEmailDomain</pre>
+                </p>
    
                     </section>
 
@@ -388,7 +450,15 @@
                 </p>
 
                     </section>
+                
 
+                <section id="codereviews">
+                <h3>Code Reviews</h3>
+
+                <p>
+                    tbd                
+                </p>
+                </section>
 
                 <section id="contact">
                 <h3>Contact the team</h3>
