@@ -1,0 +1,11 @@
+/* windowsazure.github.com css customizations
+-------------------------------------------------- */
+
+body {
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+code {
+    color: #333;
+}
