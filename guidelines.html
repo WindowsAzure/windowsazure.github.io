@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Open Source Contribution Guidelines - Windows Azure Open Source</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,268 +15,310 @@
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
     <style type="text/css">
-      body {
-        padding-top: 90px;
-        padding-bottom: 40px;
-      }
+        body {
+            padding-top: 90px;
+            padding-bottom: 40px;
+        }
     </style>
 
     <link rel="shortcut icon" href="//az83882.vo.msecnd.net/favicon.ico">
-  </head>
+</head>
 
-  <body>
+<body>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" style="padding:15px 15px 5px 15px;margin-top:-5px" href="//www.windowsazure.com/"><img 
-              src="azure/windowsazurelogo.png" style="width:218px;height:35px;border:0px"
-              alt="Windows Azure" title="Windows Azure" /></a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="index.html">Open Source Home</a></li>
-              <li class="active"><a href="guidelines.html">Contribute</a></li>
-              <li class="dropdown">
-                <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class="nav-header">Software Dev Kits</li>
-                  <li><a href="projects.html#dotnet">.NET SDK</a></li>
-                  <li><a href="projects.html#nodejs">Node.js SDK</a></li>
-                  <li><a href="projects.html#java">Java SDK</a></li>
-                  <li><a href="projects.html#php">PHP SDK</a></li>
-                  <li><a href="projects.html#python">Python SDK</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">More Projects</li>
-                  <li><a href="projects.html#iisnode">iisnode</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">WindowsAzure.com</li>
-                  <li><a href="//www.windowsazure.com/en-us/documentation/">Documentation Center</a></li>
-                  <li><a href="//www.windowsazure.com/en-us/develop/reference/">REST Reference</a></li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" style="padding: 15px 15px 5px 15px; margin-top: -5px" href="//www.windowsazure.com/">
+                    <img
+                        src="azure/windowsazurelogo.png" style="width: 218px; height: 35px; border: 0px"
+                        alt="Windows Azure" title="Windows Azure" /></a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="index.html">Open Source Home</a></li>
+                        <li class="active"><a href="guidelines.html">Contribute</a></li>
+                        <li class="dropdown">
+                            <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-header">Software Dev Kits</li>
+                                <li><a href="projects.html#dotnet">.NET SDK</a></li>
+                                <li><a href="projects.html#nodejs">Node.js SDK</a></li>
+                                <li><a href="projects.html#java">Java SDK</a></li>
+                                <li><a href="projects.html#php">PHP SDK</a></li>
+                                <li><a href="projects.html#python">Python SDK</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">More Projects</li>
+                                <li><a href="projects.html#iisnode">iisnode</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">WindowsAzure.com</li>
+                                <li><a href="//www.windowsazure.com/en-us/documentation/">Documentation Center</a></li>
+                                <li><a href="//www.windowsazure.com/en-us/develop/reference/">REST Reference</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="container">
         <div class="row">
- <div class="span3">
-     <div class="well sidebar-nav">
-<ul class="nav nav-list">
-<li><a href="#waystocontribute"><i class="icon-chevron-right"></i> Ways to contribute</a></li>
-<li><a href="#contributing"><i class="icon-chevron-right"></i> Guidelines</a></li>
-</ul>
-</div>
-     </div>
+            <div class="span3">
+                <div class="sidebar-nav" style="padding: 16px 0;">
+                    <ul class="nav nav-list">
+                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Ways to contribute</a></li>
+                        <li class="nav-header">Community member</li>
+                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Opening issues</a></li>
+                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Feature requests</a></li>
+                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Forums</a></li>
+                        <li class="nav-header">OSS Development</li>
+                        <li><a href="#contributing"><i class="icon-chevron-right"></i>Guidelines</a></li>
+                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>CLA</a></li>
+                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Step-by-step</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#waystocontribute"><i class="icon-chevron-right"></i>Contact the team</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="span9">
-            <h2 id="waystocontribute">Ways to contribute</h2>
-    <p>If you would like to become involved in the development of
-      Windows Azure SDKs and Tools there are many different ways in
-      which you can contribute. We strongly value your feedback, questions, 
-        bug reports, and feature requests. Consider these options:
-    </p>
+                <h2 id="waystocontribute">Ways to contribute</h2>
+                <p>
+                    If you would like to become involved in the development of
+                    Windows Azure SDKs and Tools there are many different ways 
+                    in which you can contribute. We strongly value your 
+                    feedback, questions, bug reports, and feature requests. 
+                    
+                    Consider these options:
+                </p>
 
-        <ul>
-            <li>Submit a <a href="//github.com/windowsazure/">GitHub issue</a> to the 
-                appropriate repo (for a guide on submitting good bug reports, read 
-                <a href="http://www.joelonsoftware.com/articles/fog0000000029.html">Painless Bug Tracking</a>).</li>
-            <li>Verify fixes for bugs.</li>
-            <li>Submit a code fix for a bug.</li>
-            <li>Submit a new feature request (as a GitHub issue).</li>
-            <li>Help answer questions on forums such as StackOverflow.</li>
-            <li>Submit a unit test.</li>
-            <li>Submit another unit test.</li>
-            <li>Tell others about these projects.</li>
-        </ul>
+                <ul>
+                    <li>Submit a 
+                        <a href="//github.com/windowsazure/">GitHub issue</a> 
+                        to the appropriate repo (for a guide on submitting good
+                        bug reports, read 
+                        <a href="http://www.joelonsoftware.com/articles/fog0000000029.html">Painless Bug Tracking</a>).
+                    </li>
+                    <li>Verify fixes for bugs.</li>
+                    <li>Submit a code fix for a bug.</li>
+                    <li>Submit a new feature request (as a GitHub issue).</li>
+                    <li>Help answer questions on forums such as StackOverflow.</li>
+                    <li>Submit a unit test.</li>
+                    <li>Submit another unit test.</li>
+                    <li>Tell others about these projects.</li>
+                </ul>
 
-    <h2 id="feedback">Using the product and providing feedback</h2>
-    <p>Using the Windows Azure SDKs and Tools, asking and answering
-      question, reporting bugs and making feature requests are critical
-      parts of the project community. User feedback is crucial for
-      improving the quality of the products and drive further
-      development. <br>
-      In order to become familiar with the functionality you can
-      donwnload the pre-compiled binaries (see <a href="#binaries">Obtaining
+                <h2 id="feedback">Using the product and providing feedback</h2>
+                <p>
+                    Using the Windows Azure SDKs and Tools, asking and answering
+                    question, reporting bugs and making feature requests are critical
+                    parts of the project community. User feedback is crucial for
+                    improving the quality of the products and drive further
+                    development.
+                    <br/>
+                    
+                    In order to become familiar with the functionality you can
+                    download the pre-compiled binaries (see 
+                    <a href="#binaries">Obtaining the binaries</a> below) 
+                    or sync the source code from Github and compile locally (see 
+                    <a href="#sourcecode">Obtaining the source code</a> below). 
+                    
+                    Once you become familiar with the functionality      
+                    you can report bugs or request new features (see 
+                    <a href="#bugsandfeatures">Report bugs and request features</a>
+                    below).
+                </p>
 
+                <h3 id="askingquestions">Asking and answering questions</h3>
+                <p>
+                    The easiest way to ask questions is to use the <a
+                    href="http://www.windowsazure.com/en-us/support/forums/">Windows Azure SDK and Tools forums</a> 
+                    on StackOverflow and MSDN. If your target language is .NET 
+                    the most appropriate forums for discussion are on MSDN. 
+                    
+                    For all other languages please use StackOverflow.
+                </p>
 
-        the binaries</a> below) or synch the source code from Github and
-      compile locally (see <a href="#sourcecode">Obtaining the source
-        code</a> below). Once you become familiar with the functionality
-      you can report bugs or request new features (see <a
-        href="#bugsandfeatures">Report bugs and request features</a>
-      below). <br>
-    </p>
-    <h3 id="askingquestions">Asking and answering questions</h3>
-    <p>The easiest way to ask questions is to use the <a
-        href="http://www.windowsazure.com/en-us/support/forums/">Windows
-        Azure SDK and Tools forums</a> on StackOverflow and MSDN. If
-      your target language is .NET the most appropriate forums for
-      discussion are on MSDN. For all other languages please use
-      StackOverflow.<br>
-    </p>
-    <h3 id="binaries">Obtaining the binaries<br>
-    </h3>
-    <p>Pre-compiled binaries of Windows Azure SDK and Tools are
-      available on the Windows Azure web site at <a
-        href="http://www.windowsazure.com/en-us/develop/downloads/">http://www.windowsazure.com/en-us/develop/downloads/</a>.
-      Select the lnaguage you are interested in (.NET, Node, Java or
-      PHP) and click on the Install button.<br>
-    </p>
-    <h3 id="sourcecode">Obtaining the source code</h3>
-    <p>In order to obtain the source code you need to become familiar
-      with Git (see <a href="http://progit.org/book/">http://progit.org/book/</a>)
-      and Github (see <a href="http://help.github.com/">http://help.github.com/</a>)
-      and you need to have Git installed on your local machine. You can
-      obtain the source code from Github by following the following
-      steps on your local machine:<br>
-    </p>
-    <ol>
-      <li>Go to https://github.com/WindowsAzure/[PROJECT]</li>
-      <li>Select <img src="images/button-fork.jpg" alt=""> and choose your own Github account as target</li>
-      <li>Clone the repository on your local machine with the following
-        Git command<br>
-        <code>git clone git@github.com:[USERNAME]/[PROJECT]</code><br>
-      </li>
-    </ol>
-    <h3 id="reportbugs">Report bugs and request features</h3>
-    <p>Issues and feature requests are submitted through the project's
-      Issues section on GitHub. Please use the following guidelines when
-      you submit issues and feature requests:<br>
-    </p>
-    <ul>
-      <li>Make sure the issue is not already reported by searching
+                <h3 id="binaries">Obtaining the binaries</h3>
+                <p>
+                    Pre-compiled binaries of Windows Azure SDK and Tools are
+                    available on the Windows Azure web site at <a
+                    href="http://www.windowsazure.com/en-us/develop/downloads/">http://www.windowsazure.com/en-us/develop/downloads/</a>.
+                    Select the language you are interested in (.NET, Node.js, 
+                    PHP, Java, Python) and click on the Install button.
+                </p>
+
+                <h3 id="sourcecode">Obtaining the source code</h3>
+                <p>
+                    In order to obtain the source code you need to become familiar
+                    with Git (see <a href="http://progit.org/book/">http://progit.org/book/</a>)
+                    and Github (see <a href="http://help.github.com/">http://help.github.com/</a>)
+                    and you need to have Git installed on your local machine. You can
+                    obtain the source code from Github by following the following
+                    steps on your local machine:<br>
+                </p>
+
+                <ol>
+                    <li>Go to https://github.com/WindowsAzure/[PROJECT]</li>
+                    <li>Select <img src="images/button-fork.jpg" alt="Fork">
+                        and choose your own Github account as target</li>
+                    <li>Clone the repository on your local machine with the following
+                        Git command<br>
+                        <code>git clone git@github.com:[USERNAME]/[PROJECT]</code>
+                    </li>
+                </ol>
+
+                <h3 id="reportbugs">Report bugs and request features</h3>
+                <p>
+                    Issues and feature requests are submitted through the project's
+                    Issues section on GitHub. Please use the following guidelines when
+                    you submit issues and feature requests:<br>
+                </p>
+
+                <ul>
+                    <li>Make sure the issue is not already reported by searching
         through the list of issues</li>
-      <li>Provide detailed description of the issue including the
+                    <li>Provide detailed description of the issue including the
         following information:</li>
-      <ul>
-        <li>Which feature the issue appears in</li>
-        <li>Under what circumstances the issue appears</li>
-        <li>What is desired behavior</li>
-        <li>What is breaking</li>
-        <li>What is the impact (things like loss or corruption of data,
+                    <ul>
+                        <li>Which feature the issue appears in</li>
+                        <li>Under what circumstances the issue appears</li>
+                        <li>What is desired behavior</li>
+                        <li>What is breaking</li>
+                        <li>What is the impact (things like loss or corruption of data,
           compromizing security, disruption of service etc.)<br>
-        </li>
-        <li>Any code that will be helpful to reproduce the issue</li>
-      </ul>
-    </ul>
-    <p>Issues are regularly reviewed and updated with additional
+                        </li>
+                        <li>Any code that will be helpful to reproduce the issue</li>
+                    </ul>
+                </ul>
+                <p>
+                    Issues are regularly reviewed and updated with additional
       information by the core team. Sometimes the core team may have
       questions about particular issue that might need clarifications
       so, please be ready to provide additional information.<br>
-    </p>
+                </p>
 
 
-    <h2 id="contributing">Contributing changes<br>
-    </h2>
+                <h2 id="contributing">Contributing changes<br>
+                </h2>
 
-        <div class="alert alert-info">
-        <!-- <a class="close">&times;</a> -->
-        <strong>Note:</strong> Legal documentation (a "CLA") is required 
+                <div class="alert alert-info">
+                    <!-- <a class="close">&times;</a> -->
+                    <strong>Note:</strong> Legal documentation (a "CLA") is required 
             before we can consider your pull requests. Please read this 
             section carefully.
-      </div>
+                </div>
 
 
-    <h3>How to become a contributor?</h3>
-    <p>In order to become a contributor to the project we need you to
+                <h3>How to become a contributor?</h3>
+                <p>
+                    In order to become a contributor to the project we need you to
       sign the Contributor License Agreement (CLA). Signing the
       Contributor License Agreement (CLA) does not grant you rights to
       commit to the main repository but it does mean that we will
       consider your contributions and you will get credit if we do.
       Active contributors might be asked to join the core team, and
-      given the ability to merge pull requests. <br>
-      You can download the Contributor License Agreement (CLA) by
-      clicking at the following link: <a href="./docs/Contribution License Agreement.pdf" 
-	  title="Contribution License Agreement">http://windowsazure.github.com/docs/Contribution License Agreement.pdf</a>. 
+      given the ability to merge pull requests.
+                    <br>
+                    You can download the Contributor License Agreement (CLA) by
+      clicking at the following link: <a href="./docs/Contribution License Agreement.pdf"
+          title="Contribution License Agreement">http://windowsazure.github.com/docs/Contribution License Agreement.pdf</a>. 
 	  Please fill in,
-      sign, scan and email it to <a href="mailto:cla@microsoft.com?subject=New CLA from Community Member" 
-	  title="Email signed Contribution License Agreement to Microsoft">cla@microsoft.com</a>.<br>
-    </p>
-    <h3>Checkout the latest code</h3>
-    <p>In order to obtain the source code you need to become familiar
+      sign, scan and email it to <a href="mailto:cla@microsoft.com?subject=New CLA from Community Member"
+          title="Email signed Contribution License Agreement to Microsoft">cla@microsoft.com</a>.<br>
+                </p>
+                <h3>Checkout the latest code</h3>
+                <p>
+                    In order to obtain the source code you need to become familiar
       with Git (see <a href="http://progit.org/book/">http://progit.org/book/</a>)
       and Github (see <a href="http://help.github.com/">http://help.github.com/</a>)
       and you need to have Git installed on your local machine. You can
       obtain the source code from Github by following the following
       steps on your local machine:<br>
-    </p>
-    <ol>
-      <li>Go to https://github.com/WindowsAzure/[PROJECT]</li>
-      <li>Select <img src="images/button-fork.jpg" alt=""> and choose your own Github account as target</li>
-      <li>Clone the repository on your local machine with the following
+                </p>
+                <ol>
+                    <li>Go to https://github.com/WindowsAzure/[PROJECT]</li>
+                    <li>Select
+                        <img src="images/button-fork.jpg" alt="">
+                        and choose your own Github account as target</li>
+                    <li>Clone the repository on your local machine with the following
         Git command<br>
-        <code>git clone git@github.com:[USERNAME]/[PROJECT]</code><br>
-      </li>
-      <li>Add remote to your local repository using the following Git
+                        <code>git clone git@github.com:[USERNAME]/[PROJECT]</code><br>
+                    </li>
+                    <li>Add remote to your local repository using the following Git
         commands<br>
-        <code>cd [PROJECT]<br>
-        </code><code>git remote add upstream
+                        <code>cd [PROJECT]<br>
+                        </code><code>git remote add upstream
           git@github.com:WindowsAzure/[PROJECT]</code><br>
-      </li>
-      <li>Update your local repository with the changes from the remote
+                    </li>
+                    <li>Update your local repository with the changes from the remote
         repository by using the following Git commands<br>
-        <code>git fetch upstream/dev<br>
-		git merge upstream/dev
-        </code></li>
-    </ol>
-    <h3>Create bug fixes and features<br>
-    </h3>
-    <p>You make modifications of the code in your local Git repository.
+                        <code>git fetch upstream/dev<br>
+                            git merge upstream/dev
+                        </code></li>
+                </ol>
+                <h3>Create bug fixes and features<br>
+                </h3>
+                <p>
+                    You make modifications of the code in your local Git repository.
       Once you are done with your implementation follow the steps below:<br>
-    </p>
-    <ol>
-	  <li>Change the working branch to <code>dev</code> with the following command<br/>
-	  <code>git checkout dev</code></li>
-      <li>Submit the changes to your own fork in GitHub by using the
+                </p>
+                <ol>
+                    <li>Change the working branch to <code>dev</code> with the following command<br />
+                        <code>git checkout dev</code></li>
+                    <li>Submit the changes to your own fork in GitHub by using the
         following command<br>
-        <code>git submit<br>
-        </code></li>
-      <li>In GitHub create new pull request by clicking on the Pull
-        Request button <img src="images/button-pull-request.jpg" alt=""></li>
-      <li>In the pull request select your fork as source and
+                        <code>git submit<br>
+                        </code></li>
+                    <li>In GitHub create new pull request by clicking on the Pull
+        Request button
+                        <img src="images/button-pull-request.jpg" alt=""></li>
+                    <li>In the pull request select your fork as source and
         WindowsAzure/[PROJECT] as destination for the request</li>
-      <li>Write detailed message describing the changes in the pull
+                    <li>Write detailed message describing the changes in the pull
         request</li>
-      <li>Submit the pull requst for consideration by the Core Team</li>
-    </ol>
-	<p><strong>Note:</strong> All changes and pull request should be done 
+                    <li>Submit the pull requst for consideration by the Core Team</li>
+                </ol>
+                <p>
+                    <strong>Note:</strong> All changes and pull request should be done 
 	in the <code>dev</code> branch. Changes will be integrated in the
-	<code>master</code> branch by the Core Team.</p>
-    <p>Please keep in mind that not all requests will be approved.
+	<code>master</code> branch by the Core Team.
+                </p>
+                <p>
+                    Please keep in mind that not all requests will be approved.
       Requests are reviewed by the Core Team on a regular basis and will
       be updated with the status at each review. If your request is
       accepted you will receive information about the next steps and
       when the request will be integrated in the main branch. If your
       request is rejected you will receive information about the reasons
       why it was rejected.<br>
-    </p>
-    <h3>Contribution guidelines</h3>
-    <p>Before you start working on bug fixes and features it is good
+                </p>
+                <h3>Contribution guidelines</h3>
+                <p>
+                    Before you start working on bug fixes and features it is good
       idea to discuss those broadly with the community. You can use the
       forums as described in <a href="#askingquestions">Asking and
         answering questions</a> for this purpose.<br>
-      Before submitting your changes make sure you followed the
+                    Before submitting your changes make sure you followed the
       guidelines below:<br>
-    </p>
-    <ul>
-      <li>You have properly documented any new functionality using the
+                </p>
+                <ul>
+                    <li>You have properly documented any new functionality using the
         documentation standards for the language (this includes clasees,
         methods and functions, properties etc.)</li>
-      <li>For any change you make proper inline documentation is
+                    <li>For any change you make proper inline documentation is
         included<br>
-      </li>
-      <li>For any new functionality you have written complete unit tests</li>
-      <li>You have ran all unit tests and they pass</li>
-    </ul>
-	In order to speed up the process of accepting your contributions, you
+                    </li>
+                    <li>For any new functionality you have written complete unit tests</li>
+                    <li>You have ran all unit tests and they pass</li>
+                </ul>
+                In order to speed up the process of accepting your contributions, you
 	should try to make your checkins as small as possible, avoid any unnecessary
 	deltas and the need to rebase.
 
@@ -286,28 +328,30 @@
 
 
 
-      <hr>
+        <hr>
 
-      <footer>
-        <p class="pull-right"><a href="#top">Back to top</a></p>
-        <div class="links">
-          <a href="//www.windowsazure.com/">WindowsAzure.com</a> |
+        <footer>
+            <p class="pull-right"><a href="#top">Back to top</a></p>
+            <div class="links">
+                <a href="//www.windowsazure.com/">WindowsAzure.com</a> |
           <a href="http://blogs.msdn.com/b/windowsazure/">Windows Azure Blog</a> |
           <a href="https://twitter.com/windowsazure">@windowsazure</a> |
-          <a href="https://github.com/windowsazure/">GitHub</a> 
-        </div>
+          <a href="https://github.com/windowsazure/">GitHub</a>
+            </div>
 
-        <p><small>
-            &copy; Microsoft | 
+            <p>
+                <small>&copy; Microsoft | 
             <a href="http://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409">Privacy and Cookies</a> |
             <a href="http://go.microsoft.com/fwlink/p/?linkid=222682&clcid=0x409">Trademarks</a>
-            </small></p>
-      </footer>
+                </small>
+            </p>
+        </footer>
 
-    </div> <!-- /container -->
+    </div>
+    <!-- /container -->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-  </body>
+</body>
 </html>
