@@ -75,8 +75,8 @@
                         <li><a href="#features"><i class="icon-chevron-right"></i>Feature requests</a></li>
                         <li class="nav-header">OSS Development</li>
                         <li><a href="#contributing"><i class="icon-chevron-right"></i>Guidelines</a></li>
-                        <li><a href="#cla"><i class="icon-chevron-right"></i>CLA</a></li>
-                        <li><a href="#process"><i class="icon-chevron-right"></i>Step-by-step</a></li>
+                        <li><a href="#cla"><i class="icon-chevron-right"></i>Legal / CLA</a></li>
+                        <li><a href="#stepbystep"><i class="icon-chevron-right"></i>Step-by-step</a></li>
                         <li><a href="#contact"><i class="icon-chevron-right"></i>Contact the team</a></li>
                         <li class="nav-header">Join our team</li>
                         <li><a href="#jobs"><i class="icon-chevron-right"></i> Azure is hiring</a></li>
@@ -85,7 +85,7 @@
             </div>
             <div class="span9">
                 <section id="waystocontribute">
-                <h2>Ways to contribute</h2>
+                <h1>Ways to contribute</h1>
                 <p>
                     If you would like to become involved in the development of
                     Windows Azure SDKs and Tools there are many different ways 
@@ -208,43 +208,127 @@
 
 
 
-
-                <h2 id="contributing">Contributing changes</h2>
+                <section id="contributing">
+                <h2>Contributing changes</h2>
 
                 <div class="alert alert-info">
                     <!-- <a class="close">&times;</a> -->
-                    <strong>Note:</strong> Legal documentation (a "CLA") is required 
-            before we can consider your pull requests. Please read this 
-            section carefully.
+                    <strong>Note:</strong> A Contribution Legal Agreement (CLA) is 
+                    required before the team can consider your contributions &amp; 
+                    pull requests. Please read this entire page carefully.
                 </div>
 
+                <h4>Guidelines</h4>
+                <p>
+                    Before you start working on bug fixes and features it is good
+      idea to discuss those broadly with the community. You can use the
+      forums as described in <a href="#askingquestions">Asking and
+        answering questions</a> for this purpose.<br>
+                    Before submitting your changes make sure you followed the
+      guidelines below:<br>
+                </p>
+                <ul>
+                    <li>You have properly documented any new functionality using the
+        documentation standards for the language (this includes clasees,
+        methods and functions, properties etc.)</li>
+                    <li>For any change you make proper inline documentation is
+        included<br>
+                    </li>
+                    <li>For any new functionality you have written complete unit tests</li>
+                    <li>You have ran all unit tests and they pass</li>
+                </ul>
+                In order to speed up the process of accepting your contributions, you
+	should try to make your checkins as small as possible, avoid any unnecessary
+	deltas and the need to rebase.
+    
+                </section>
 
-                <h3>How to become a contributor?</h3>
+                <section id="cla">
+                <h3>Contribution License Agreement (CLA)</h3>
+
+                <p>In order to become a contributor to the Windows Azure 
+                open source projects on GitHub you must follow some 
+                legal requirements.</p>
+
+                <p>Until you meet the legal requirements your pull requests / source 
+                    contributions will not be considered or reviewed.</p>
+
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                    <li class="active"><a href="#standardcla" data-toggle="tab">Community Member</a></li>
+                    <li><a href="#ftecla" data-toggle="tab">Microsoft FTE</a></li>
+                    <li><a href="#msftcla" data-toggle="tab">Microsoft Partner Team</a></li>
+                    </ul>
+                    <div class="tab-content">
+
+                    <div class="tab-pane active" id="standardcla">
+
+
+                    <p>As a community member you must sign the Contribution License Agreement (CLA) 
+                       before you can contribute to Microsoft open source projects.</p>
+
+                    <p>You only need complete and submit the documentation once. Please 
+                    carefully review the document; you may also need to have your 
+                    employer sign the document.</p>
+
+                    <p>Signing the Contribution License Agreement (CLA) does not grant 
+                        you rights to commit to the main repository but it does mean that 
+                        the Windows Azure team will be able to review and consider your 
+                        contributions and you will get credit if we do.</p>
+
+                    <p>You can download the Contribution License Agreement (CLA) by
+          clicking the following link: <a href="docs/Contribution License Agreement.pdf"
+              title="Contribution License Agreement">http://windowsazure.github.com/docs/Contribution License Agreement.pdf</a>.</p>
+                        
+                    <p><strong>Please fill in, sign, scan &amp; email the completed document 
+                        to <a href="mailto:cla@microsoft.com?subject=New CLA from Community Member"
+              title="Email signed Contribution License Agreement to Microsoft">cla@microsoft.com</a>.</strong>
+                    </p>
+
+                    </div>
+
+                    <div class="tab-pane" id="ftecla">
+
+                        <p>If you are currently employed as an active Full-Time Employee (FTE) 
+                        at Microsoft you may be able to contribute through your job to 
+                        the SDK without signing a CLA.</p>
+
+                        <p>You will need to clearly identify yourself as a Microsoft employee 
+                        in your GitHub profile. You should also include your alias in any 
+                        pull requests.</p>
+
+                        <p>As a courtesy you should have a conversation about contributing 
+                        to the Azure open source projects with your manager, and remember
+                        to follow your business group's guidelines and policies.</p>
+
+                    </div>
+
+                    <div class="tab-pane" id="msftcla">
+
+                        <p>If your Microsoft team is looking to partner with the 
+                            Windows Azure SDK team to ship new bits, create new 
+                            open source projects &amp; meet your shipping 
+                            criteria, please start engaging our triad early.</p>
+
+                        <p>TODO: Links</p>
+
+                    </div>
+                    </div>
+                </div>
+
                 <p>
-                    In order to become a contributor to the project we need you to
-      sign the Contributor License Agreement (CLA). Signing the
-      Contributor License Agreement (CLA) does not grant you rights to
-      commit to the main repository but it does mean that we will
-      consider your contributions and you will get credit if we do.
-      Active contributors might be asked to join the core team, and
-      given the ability to merge pull requests.
-                    <br>
-                    You can download the Contributor License Agreement (CLA) by
-      clicking at the following link: <a href="./docs/Contribution License Agreement.pdf"
-          title="Contribution License Agreement">http://windowsazure.github.com/docs/Contribution License Agreement.pdf</a>. 
-	  Please fill in,
-      sign, scan and email it to <a href="mailto:cla@microsoft.com?subject=New CLA from Community Member"
-          title="Email signed Contribution License Agreement to Microsoft">cla@microsoft.com</a>.<br>
+                  Active contributors might be asked to join the core team or 
+                    help with feature development. The ability to merge pull
+                    requests typically remains with the SDK team to ensure 
+                    that contributions to master are thoroughly reviewed.
                 </p>
-                <h3>Checkout the latest code</h3>
-                <p>
-                    In order to obtain the source code you need to become familiar
-      with Git (see <a href="http://progit.org/book/">http://progit.org/book/</a>)
-      and Github (see <a href="http://help.github.com/">http://help.github.com/</a>)
-      and you need to have Git installed on your local machine. You can
-      obtain the source code from Github by following the following
-      steps on your local machine:<br>
-                </p>
+   
+                    </section>
+
+                <section id="stepbystep">
+                    <h2>Step-by-step guide</h2>
+
+                <h4>Checkout the latest code</h4>
                 <ol>
                     <li>Go to https://github.com/WindowsAzure/[PROJECT]</li>
                     <li>Select
@@ -266,8 +350,8 @@
                             git merge upstream/dev
                         </code></li>
                 </ol>
-                <h3>Create bug fixes and features<br>
-                </h3>
+
+                <h4>Fixing bugs</h4>
                 <p>
                     You make modifications of the code in your local Git repository.
       Once you are done with your implementation follow the steps below:<br>
@@ -303,31 +387,8 @@
       why it was rejected.<br>
                 </p>
 
-                <section id="contribute">
-                <h3>Contribution guidelines</h3>
-                <p>
-                    Before you start working on bug fixes and features it is good
-      idea to discuss those broadly with the community. You can use the
-      forums as described in <a href="#askingquestions">Asking and
-        answering questions</a> for this purpose.<br>
-                    Before submitting your changes make sure you followed the
-      guidelines below:<br>
-                </p>
-                <ul>
-                    <li>You have properly documented any new functionality using the
-        documentation standards for the language (this includes clasees,
-        methods and functions, properties etc.)</li>
-                    <li>For any change you make proper inline documentation is
-        included<br>
-                    </li>
-                    <li>For any new functionality you have written complete unit tests</li>
-                    <li>You have ran all unit tests and they pass</li>
-                </ul>
-                In order to speed up the process of accepting your contributions, you
-	should try to make your checkins as small as possible, avoid any unnecessary
-	deltas and the need to rebase.
-    
-                </section>
+                    </section>
+
 
                 <section id="contact">
                 <h3>Contact the team</h3>
