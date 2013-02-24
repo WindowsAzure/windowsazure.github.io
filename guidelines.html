@@ -395,41 +395,43 @@ git config user.email YourAlias@YourEmailDomain</pre>
                 <h4>Checkout the latest code</h4>
                 <ol>
                     <li>Go to https://github.com/WindowsAzure/[PROJECT]</li>
-                    <li>Select
-                        <img src="images/button-fork.jpg" alt="">
-                        and choose your own Github account as target</li>
+                    <li>Select <img src="images/button-fork.jpg" alt="Fork"></li>
                     <li>Clone the repository on your local machine with the following
         Git command<br>
                         <code>git clone git@github.com:[USERNAME]/[PROJECT]</code><br>
                     </li>
                     <li>Add remote to your local repository using the following Git
         commands<br>
-                        <code>cd [PROJECT]<br>
-                        </code><code>git remote add upstream
-          git@github.com:WindowsAzure/[PROJECT]</code><br>
+                        <code>cd [PROJECT]</code><br>
+                        <code>git remote add upstream
+          git@github.com:WindowsAzure/[PROJECT]</code>
                     </li>
                     <li>Update your local repository with the changes from the remote
         repository by using the following Git commands<br>
-                        <code>git fetch upstream/dev<br>
-                            git merge upstream/dev
-                        </code></li>
+                        <code>git fetch upstream</code></li>
+                    <li>Create a new working branch called <code>dev</code> with the following command<br />
+                        <code>git checkout -b dev</code></li>
+                    <li>Merge your new branch with your local copy of the remote repository<br><code>git merge upstream/dev</code></li>
                 </ol>
 
                 <h4>Fixing bugs</h4>
                 <p>
-                    You make modifications of the code in your local Git repository.
-      Once you are done with your implementation follow the steps below:<br>
+                    You can now start modifying the code in your local Git repository.
+      Once you are done with your implementation follow the steps below:
                 </p>
                 <ol>
-                    <li>Change the working branch to <code>dev</code> with the following command<br />
-                        <code>git checkout dev</code></li>
+                    <li>Add the file you changed to staging<br>
+                        <code>git add [FILE]</code><br>You can add multiple files with
+                        the following Git command<br><code>git add .</code>
+                    </li>
+                    <li>Commit your changes when you are done. Don't forget to add a useful message!<br>
+                        <code>git commit -m "Created GUI interface using Visual Basic"</code></li>
                     <li>Submit the changes to your own fork in GitHub by using the
         following command<br>
-                        <code>git submit<br>
-                        </code></li>
+                        <code>git push origin dev</code></li>
                     <li>In GitHub create new pull request by clicking on the Pull
         Request button
-                        <img src="images/button-pull-request.jpg" alt=""></li>
+                        <img src="images/button-pull-request.jpg" alt="Pull Request"></li>
                     <li>In the pull request select your fork as source and
         WindowsAzure/[PROJECT] as destination for the request</li>
                     <li>Write detailed message describing the changes in the pull
