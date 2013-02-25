@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="//az83882.vo.msecnd.net/favicon.ico">
 </head>
 
-<body data-spy="scroll" data-target=".sidebar-nav">
+<body data-spy="scroll" data-target=".sidebar-nav" data-x-offset-top="60">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
@@ -39,6 +39,7 @@
                         <li class="dropdown">
                             <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
                             <ul class="dropdown-menu">
+                                <li><a href="projects.html">All projects</a></li>
                                 <li class="nav-header">Software Dev Kits</li>
                                 <li><a href="projects.html#dotnet">.NET SDK</a></li>
                                 <li><a href="projects.html#nodejs">Node.js SDK</a></li>
@@ -66,7 +67,7 @@
         <div class="row">
             <div class="span3">
                 <div class="sidebar-nav" style="padding: 20px 0;">
-                    <ul class="nav nav-list affix" style="width: 195px">
+                    <ul class="nav azure-nav-list nav-list">
                         <li class="active"><a href="#waystocontribute"><i class="icon-chevron-right"></i>Ways to contribute</a></li>
                         <li class="nav-header">Community member</li>
                         <li><a href="#source"><i class="icon-chevron-right"></i>Source code</a></li>
@@ -79,26 +80,28 @@
                         <li><a href="#stepbystep"><i class="icon-chevron-right"></i>Step-by-step</a></li>
                         <li><a href="#codereviews"><i class="icon-chevron-right"></i>Code reviews</a></li>
                         <li><a href="#contact"><i class="icon-chevron-right"></i>Contact the team</a></li>
+                        <li><a href="#thanks"><i class="icon-chevron-right"></i> Our contributors</a></li>
                         <li class="nav-header">Join our team</li>
                         <li><a href="#jobs"><i class="icon-chevron-right"></i> Azure is hiring</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#thanks"><i class="icon-chevron-right"></i> Our contributors</a></li>
                     </ul>
                 </div>
             </div>
             <div class="span9">
                 <section id="waystocontribute">
-                <h1>Ways to contribute</h1>
+                <h1>Let's work together.</h1>
+
+                <h2>Ways to contribute</h2>
+
                 <p>
                     If you would like to become involved in the development of
                     Windows Azure SDKs and Tools there are many different ways 
                     in which you can contribute. We strongly value your 
                     feedback, questions, bug reports, and feature requests.
-                    </p>
+                </p>
                     
-                    <p>
-                        Consider these options:
-                    </p>
+                <p>
+                    Consider these options:
+                </p>
 
                 <ul>
                     <li><a href="//www.windowsazure.com/en-us/develop/downloads/">Use the products</a></li>
@@ -120,38 +123,43 @@
                 </section>
 
                 <section id="source">
-                <h3>Get the source code</h3>
+                <h2>Get the source code</h2>
                 <p>
                     Our source is developed &amp; published on GitHub.com 
-                    (<a href="//help.github.com/">learn more</a>).
-                    </p>
-                    <p>If you are new to <a href="//git-scm.com/">Git</a>, 
-                        check out the 
-                        <a href="//progit.org/book/">Pro Git Book</a> online or at 
-                        your bookseller of choice.</p>
-                    <p>We 
-                        have based our development process for moving code 
-                        around on the now-classic 
-                        <a href="http://nvie.com/posts/a-successful-git-branching-model/">Successful Git Branching Model</a> 
-                        as well as using GitHub pull requests and forks between the 
-                        central organization repository and developer accounts.</p>
+                    (<a href="//help.github.com/">learn more</a>). If you are 
+                    new to <a href="//git-scm.com/">Git</a>, 
+                    check out the 
+                    <a href="//progit.org/book/">Pro Git Book</a> online or at 
+                    your bookseller of choice.
+                </p>
+                <p>
+                    We have based our development process for moving code 
+                    around on the now-classic 
+                    <a href="http://nvie.com/posts/a-successful-git-branching-model/">Successful Git Branching Model</a> 
+                    as well as using GitHub pull requests and forks between the 
+                    central organization repository and developer accounts.
+                </p>
                 <p>
                     From any of the Windows Azure code repositories on GitHub, 
                     you can &quot;Fork&quot; the code to your own account.
                 </p>
 
-                    <p>To get the source on your local development machine, 
+                <p>
+                    To get the source on your local development machine, 
                     simply clone the repo using Git:<br />
-                        <code>git clone https://github.com/USERNAME/PROJECT.git</code>
-                        </p>
+                    <code>git clone https://github.com/USERNAME/PROJECT.git</code>
+                </p>
 
-                    <p>Each repository has a README that should be helpful to 
-                        learn more about the specifics of the language, project 
-                    and its development environment.</p>
+                <p>
+                    Each repository has a README that should be helpful to 
+                    learn more about the specifics of the language, project 
+                    and its development environment.
+                </p>
+
                 </section>
 
                 <section id="forums">
-                <h3>Q&amp;A forums</h3>
+                <h2>Q&amp;A forums</h2>
                 <p>
                     The easiest way to ask questions is to use the <a
                     href="http://www.windowsazure.com/en-us/support/forums/">Windows Azure SDK and Tools forums</a> 
@@ -160,10 +168,37 @@
                     
                     For all other languages please use StackOverflow.
                 </p>
+
+                <table class="table">
+                    <thead>
+                        <th colspan="2">Forum Provider</th>
+                        <th>Tags</th>
+                        <th>Notes</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="//stackoverflow.com/tagged/azure"><img 
+                                src="azure/stackoverflow.png" alt="StackOverflow" title="StackOverflow" style="width: 83px;height: 82px" /></a></td>
+                            <td><a href="//stackoverflow.com/tagged/azure"><h2>StackOverflow</h2></a></td>
+                            <td><a href="//stackoverflow.com/tagged/azure">azure</a></td>
+                            <td>A friendly, open and fun community of developers.</td>
+                        </tr>
+                        <tr>
+                            <td><a style="width: 83px" href="http://social.msdn.microsoft.com/Forums/en-US/category/windowsazureplatform,azuremarketplace,windowsazureplatformctp"><img 
+                                src="azure/microsoftforums.png" alt="Microsoft Forums for Windows Azure" 
+                              title="Microsoft forums" style="" /></a></td>
+                            <td><a href="http://social.msdn.microsoft.com/Forums/en-US/category/windowsazureplatform,azuremarketplace,windowsazureplatformctp"><h2>Microsoft forums</h2></a></td>
+                            <td></td>
+                            <td>A good place for support and feedback on Windows Azure features 
+                            and services like Web Sites, Mobile Services, etc.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
                 </section>
 
                 <section id="issues">
-                <h3>Reporting bugs &amp; issues</h3>
+                <h2>Reporting bugs &amp; issues</h2>
                 <p>
                     Issues and feature requests are submitted through the project's
                     Issues section on GitHub. Please use the following guidelines when
@@ -171,33 +206,64 @@
                 </p>
 
                 <ul>
-                    <li>Make sure the issue is not already reported by searching
-        through the list of issues</li>
-                    <li>Provide detailed description of the issue including the
-        following information:</li>
+                    <li>
+                        Make sure the issue is not already reported by searching
+                        through the list of issues
+                    </li>
+                    <li>
+                        Provide detailed description of the issue including the
+        following information:
                     <ul>
                         <li>Which feature the issue appears in</li>
                         <li>Under what circumstances the issue appears</li>
                         <li>What is desired behavior</li>
                         <li>What is breaking</li>
-                        <li>What is the impact (things like loss or corruption of data,
-          compromizing security, disruption of service etc.)<br>
+                        <li>
+                            What is the impact (things like loss or corruption of data,
+                            compromizing security, disruption of service etc.)
                         </li>
                         <li>Any code that will be helpful to reproduce the issue</li>
                     </ul>
+                    </li>
                 </ul>
                 <p>
                     Issues are regularly reviewed and updated with additional
-      information by the core team. Sometimes the core team may have
-      questions about particular issue that might need clarifications
-      so, please be ready to provide additional information.<br>
+                    information by the core team. Sometimes the core team may have
+                    questions about particular issue that might need clarifications
+                    so, please be ready to provide additional information.
                 </p>
                 </section>
 
                 <section id="features">
-                <h3>Feature requests</h3>
+                <h2>Feature requests</h2>
                 <p>
+                    Feature requests and Design Change Requests (DCRs) are an important part of 
+                    the lifecycle of any software project. Please log these as Issues in the 
+                    appropriate GitHub repository.
                 </p>
+                <p>
+                    Although the team will consider any opened issues, please keep in mind 
+                    that there is an extremely high bar when it comes to expanding the scope 
+                    and functionality of a core product such as an SDK for Windows Azure.
+                </p>
+                <p>
+                    When opening any feature requests, consider including as much information 
+                    as possible, including:
+                </p>
+                <ul>
+                    <li>Detailed scenarios enabled by the feature or DCR.</li>
+                    <li>Information about your use case or additional value your 
+                    business or site will see from the feature.</li>
+                    <li>Any design tips or estimation ideas you may have considered already.</li>
+                    <li>Make note of whether you are opening an issue you would 
+                    like the Microsoft team or another community member to work on <em>or</em> 
+                    if you are looking to design &amp; develop the feature 
+                    yourself.</li>
+                    <li>Any potential caveats or concerns you may have already 
+                    thought about.</li>
+                    <li>A miniature test plan or list of test scenarios is always 
+                    helpful.</li>
+                </ul>
                 </section>
 
 
@@ -299,7 +365,7 @@
                 </section>
 
                 <section id="cla">
-                <h3>Contribution License Agreement (CLA)</h3>
+                <h2>Contribution License Agreement (CLA)</h2>
 
                 <p>In order to become a contributor to the Windows Azure 
                 open source projects on GitHub you must follow some 
@@ -314,7 +380,7 @@
                     <li><a href="#ftecla" data-toggle="tab">Microsoft FTE</a></li>
                     <li><a href="#msftcla" data-toggle="tab">Microsoft Partner Team</a></li>
                     </ul>
-                    <div class="tab-content">
+                    <div class="tab-content well" style="margin-top: -20px">
 
                     <div class="tab-pane active" id="standardcla">
 
@@ -334,6 +400,13 @@
                     <p>You can download the Contribution License Agreement (CLA) by
           clicking the following link: <a href="docs/Contribution License Agreement.pdf"
               title="Contribution License Agreement">http://windowsazure.github.com/docs/Contribution License Agreement.pdf</a>.</p>
+
+                        <p><a href="docs/Contribution License Agreement.pdf" 
+                            title="Contribution License Agreement"
+                             class="btn btn-primary"><i class="icon-download icon-white"></i>
+                            Download the Contribution License Agreement (CLA)</a><br />
+                        <small>281 KB PDF</small></p>
+
                         
                     <p><strong>Please fill in, sign, scan &amp; email the completed document 
                         to <a href="mailto:cla@microsoft.com?subject=New CLA from Community Member"
@@ -363,9 +436,16 @@
                         <p>If your Microsoft team is looking to partner with the 
                             Windows Azure SDK team to ship new bits, create new 
                             open source projects &amp; meet your shipping 
-                            criteria, please start engaging our triad early.</p>
+                            criteria, please start engaging the Windows Azure SDK 
+                            triad early.</p>
 
-                        <p>TODO: Links</p>
+                        <p>Our SharePoint site contains plenty of information on 
+                        the onboarding process, timelines and contacts.</p>
+
+                        <p><a href="https://microsoft.sharepoint.com/teams/azuresdk/" 
+                             class="btn btn-primary"><i class="icon-lock icon-white"></i>
+                            Open Windows Azure SDK SharePoint</a><br />
+                        <small>Requires corporate credentials</small></p>
 
                     </div>
                     </div>
@@ -455,7 +535,7 @@ git config user.email YourAlias@YourEmailDomain</pre>
                 
 
                 <section id="codereviews">
-                <h3>Code Reviews</h3>
+                <h2>Code Reviews</h2>
 
                 <p>
                     tbd                
@@ -463,28 +543,22 @@ git config user.email YourAlias@YourEmailDomain</pre>
                 </section>
 
                 <section id="contact">
-                <h3>Contact the team</h3>
+                <h2>Contact the team</h2>
 
-                <p>tbd</p>
-                
-                </section> 
+                    <p>The best way to get in touch with the team regarding feature ideas, 
+                    developer designs amd communicating about bug fixes is to use the Issues system 
+                    built in to GitHub.</p>
 
-                <hr />
+                    <p>If you are looking for support or to provide feedback, there are a lot of 
+                    places to do this.</p>
 
-                <section id="jobs">
-                <h3>Jobs</h3>
-
-                <p>Microsoft is always hiring bright and talented students &amp; 
-                professionals. Please consider submitting your resume and 
-                applying for open positions at 
-                <a href="//careers.microsoft.com/">//careers.microsoft.com</a>.</p>
+                <p><a class="btn btn-primary" href="contact.html">Detailed support and contact information &raquo;</a></p>
                 
                 </section> 
 
                 
-
                 <section id="thanks">
-                <h3>Thank you</h3>
+                <h2>Thank you</h2>
 
                 <p>
                     Huge thanks go to the contributors from the community who 
@@ -492,6 +566,18 @@ git config user.email YourAlias@YourEmailDomain</pre>
                 </p>
                     <p>You can find a <a href="thanks.html">list of contributors here</a>.
                 </section>
+
+                <hr />
+
+                <section id="jobs">
+                <h2>Jobs</h2>
+
+                <p>Microsoft is always hiring bright and talented students &amp; 
+                professionals. Please consider submitting your resume and 
+                applying for open positions at 
+                <a href="//careers.microsoft.com/">//careers.microsoft.com</a>.</p>
+                
+                </section> 
                                                    
             </div>
         </div>
@@ -523,6 +609,7 @@ git config user.email YourAlias@YourEmailDomain</pre>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/azure.js"></script>
 
 </body>
 </html>
