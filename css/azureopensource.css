@@ -32,3 +32,12 @@ h1 {
 xx-section {
     padding-top: 20px;
 }
+
+.twitter-cards > tbody > tr > td > h4,
+.twitter-cards > tbody > tr > td > p {
+    text-align: center;
+}
+
+.twitter-cards > tbody >tr > td {
+    width: 33%;
+}
