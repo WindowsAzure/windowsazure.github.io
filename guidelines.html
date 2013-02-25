@@ -471,68 +471,84 @@ git config user.email YourAlias@YourEmailDomain</pre>
                     </section>
 
                 <section id="stepbystep">
-                    <h2>Step-by-step guide</h2>
+                  <h2>Step-by-step guide</h2>
 
-                <h4>Checkout the latest code</h4>
-                <ol>
+                  <h4>Checkout the latest code</h4>
+                  <p>In order to obtain the source code you need to become familiar
+                    with Git (see <a href="http://progit.org/book/">http://progit.org/book/</a>)
+                    and Github (see <a href="http://help.github.com/">http://help.github.com/</a>)
+                    and you need to have Git installed on your local machine. You can
+                    obtain the source code from Github and start a contributor environment by
+                    following the these steps on your local machine:<br>
+                  </p>
+                  <ol>
                     <li>Go to https://github.com/WindowsAzure/[PROJECT]</li>
-                    <li>Select
-                        <img src="images/button-fork.jpg" alt="">
-                        and choose your own Github account as target</li>
+                    <li>Select <img src="images/button-fork.jpg" alt=""> and choose your own Github account as target</li>
                     <li>Clone the repository on your local machine with the following
-        Git command<br>
-                        <code>git clone https://github.com/USERNAME/PROJECT.git</code><br>
+                      Git command<br>
+                      <code>git clone git@github.com:[USERNAME]/[PROJECT]</code><br>
                     </li>
+                    <li>When you clone the repository you should see, at least, 2 branches: dev and master.
+                    dev is the branch where the team does all the day to day development while master is 
+                    the branch that is always up to date with the latest release.<br/>
+                    This means, before starting any work, you should switch to the dev branch. You can do so
+                    with the following command:<br/>
+                    <code>git checkout dev</code></li>
+                  </ol>
+                  <h4>Create bug fixes and features<br>
+                  </h4>
+                  <p>You can then start to make modifications to the code in your local Git repository.
+                    This can be done in your local dev branch or, if you prefer, in a branch out of dev.
+                    In the simplest scenario, working directly on dev, you can commit your work
+                    with following commands:<br/>
+                  </p>
+                  <ol>
+                    <li>Add and commit your local changes<br/>
+                      <code>git commit -a</code>
+                    </li>
+                    <li>Push your changes from your local repository to your github fork<br/>
+                      <code>git push</code>
+                    </li>
+                  </ol>
+                  <p>Once your code is in your github fork, you can then submit a pull request
+                    for the team's review. You can do so with the following commands:<br/>
+                  </p>
+                  <ol>
+                    <li>In GitHub click on the Pull
+                      Request button <img src="images/button-pull-request.jpg" alt=""></li>
+                    <li>In the pull request select your fork as source and
+                      WindowsAzure/[PROJECT] as destination for the request</li>
+                    <li>Write detailed message describing the changes in the pull
+                      request</li>
+                    <li>Submit the pull requst for consideration by the Core Team</li>
+                  </ol>
+                  <p>If there are conflicts between your fork and the main project one, github
+                    will warn you that the pull request cannot be merged. If that's the case,
+                    you can do the following:
+                  </p>
+                  <ol>
                     <li>Add remote to your local repository using the following Git
-        commands<br>
-                        <code>cd [PROJECT]<br>
-                        </code><code>git remote add upstream -f https://github.com/USERNAME/PROJECT.git</code><br>
+                      commands<br>
+                      </code><code>git remote add upstream -f
+                        git@github.com:WindowsAzure/[PROJECT]</code><br>
                     </li>
                     <li>Update your local repository with the changes from the remote
-        repository by using the following Git commands<br/>
-                        <code>git fetch upstream/dev<br/>
-                            git merge upstream/dev
-                        </code></li>
-                </ol>
-
-                <h4>Fixing bugs</h4>
-                <p>
-                    You make modifications of the code in your local Git repository.
-      Once you are done with your implementation follow the steps below:<br>
-                </p>
-                <ol>
-                    <li>Change the working branch to <code>dev</code> with the following command<br />
-                        <code>git checkout dev</code></li>
-                    <li>Submit the changes to your own fork in GitHub by using the
-        following command<br>
-                        <code>git submit<br>
-                        </code></li>
-                    <li>In GitHub create new pull request by clicking on the Pull
-        Request button
-                        <img src="images/button-pull-request.jpg" alt=""></li>
-                    <li>In the pull request select your fork as source and
-        WindowsAzure/[PROJECT] as destination for the request</li>
-                    <li>Write detailed message describing the changes in the pull
-        request</li>
-                    <li>Submit the pull request for consideration by the SDK Team</li>
-                </ol>
-                <p>
-                    <strong>Note:</strong> All changes and pull request should be done 
-	in the <code>dev</code> branch. Changes will be integrated in the
-	<code>master</code> branch by the Core Team.
-                </p>
-                <p>
-                    Please keep in mind that not all requests will be approved.
-      Requests are reviewed by the Core Team on a regular basis and will
-      be updated with the status at each review. If your request is
-      accepted you will receive information about the next steps and
-      when the request will be integrated in the main branch. If your
-      request is rejected you will receive information about the reasons
-      why it was rejected.<br>
-                </p>
-
-                    </section>
-                
+                      repository by using the following Git commands (make sure you're in
+                      the branch you're submitting the code from)<br>
+                      <code>git merge upstream/dev</code></li>
+                    <li>Resolve any conflicts locally and finally do another push with the command<br/>
+                      <code>git push</code>
+                    </li>
+                  </ol>
+                  <p>Please keep in mind that not all requests will be approved.
+                    Requests are reviewed by the Core Team on a regular basis and will
+                    be updated with the status at each review. If your request is
+                    accepted you will receive information about the next steps and
+                    when the request will be integrated in the main branch. If your
+                    request is rejected you will receive information about the reasons
+                    why it was rejected.<br>
+                  </p>
+                </section>
 
                 <section id="codereviews">
                 <h2>Code Reviews</h2>
