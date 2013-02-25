@@ -9,3 +9,26 @@ body {
 code {
     color: #333;
 }
+
+h3 {
+  font-size: 24.5px;
+  color:  #777;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.nav-tabs > .active > a {
+    background-color: #eee;
+    color:  #333;
+}
+
+.nav-tabs > .active > a:hover {
+    background-color: #eee;
+    color:  #333;
+}
+
+xx-section {
+    padding-top: 20px;
+}
