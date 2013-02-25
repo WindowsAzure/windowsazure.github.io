@@ -67,7 +67,7 @@
         <div class="row">
             <div class="span3">
                 <div class="sidebar-nav" style="padding: 20px 0;">
-                    <ul class="nav azure-nav-list nav-list">
+                    <ul class="nav azure-nav-list nav-list affix" style="min-width: 210px; max-width: 290px">
                         <li class="active"><a href="#waystocontribute"><i class="icon-chevron-right"></i>Ways to contribute</a></li>
                         <li class="nav-header">Community member</li>
                         <li><a href="#source"><i class="icon-chevron-right"></i>Source code</a></li>
@@ -147,7 +147,8 @@
                 <p>
                     To get the source on your local development machine, 
                     simply clone the repo using Git:<br />
-                    <code>git clone https://github.com/USERNAME/PROJECT.git</code>
+                    <code>git clone https://github.com/USERNAME/PROJECT.git<br />
+                    git checkout dev</code>
                 </p>
 
                 <p>
@@ -480,17 +481,16 @@ git config user.email YourAlias@YourEmailDomain</pre>
                         and choose your own Github account as target</li>
                     <li>Clone the repository on your local machine with the following
         Git command<br>
-                        <code>git clone git@github.com:[USERNAME]/[PROJECT]</code><br>
+                        <code>git clone https://github.com/USERNAME/PROJECT.git</code><br>
                     </li>
                     <li>Add remote to your local repository using the following Git
         commands<br>
                         <code>cd [PROJECT]<br>
-                        </code><code>git remote add upstream
-          git@github.com:WindowsAzure/[PROJECT]</code><br>
+                        </code><code>git remote add upstream -f https://github.com/USERNAME/PROJECT.git</code><br>
                     </li>
                     <li>Update your local repository with the changes from the remote
-        repository by using the following Git commands<br>
-                        <code>git fetch upstream/dev<br>
+        repository by using the following Git commands<br/>
+                        <code>git fetch upstream/dev<br/>
                             git merge upstream/dev
                         </code></li>
                 </ol>
@@ -514,7 +514,7 @@ git config user.email YourAlias@YourEmailDomain</pre>
         WindowsAzure/[PROJECT] as destination for the request</li>
                     <li>Write detailed message describing the changes in the pull
         request</li>
-                    <li>Submit the pull requst for consideration by the Core Team</li>
+                    <li>Submit the pull request for consideration by the SDK Team</li>
                 </ol>
                 <p>
                     <strong>Note:</strong> All changes and pull request should be done 
@@ -609,7 +609,8 @@ git config user.email YourAlias@YourEmailDomain</pre>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- 
     <script src="js/azure.js"></script>
-
+    -->
 </body>
 </html>
