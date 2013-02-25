@@ -32,3 +32,31 @@ h1 {
 xx-section {
     padding-top: 20px;
 }
+
+.twitter-cards > tbody > tr > td > h4,
+.twitter-cards > tbody > tr > td > p {
+    text-align: center;
+}
+
+.twitter-cards > tbody >tr > td {
+    width: 33%;
+}
+
+.social {
+  text-align: center;
+}
+
+.social-buttons {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.social-buttons li {
+  display: inline-block;
+  padding: 5px 8px;
+  line-height: 1;
+  *display: inline;
+  *zoom: 1;
+}
