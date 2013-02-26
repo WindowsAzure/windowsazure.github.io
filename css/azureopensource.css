@@ -46,8 +46,12 @@ h1 {
   top: 40px;
 }
 
+.small-sections section {
+    padding-top: 6px;
+}
+
 section {
-    padding-top: 30px;
+    padding-top: 42px;
 }
 
 .twitter-cards > tbody > tr > td > h4,
