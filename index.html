@@ -1,33 +1,139 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta content="text/html; charset=ISO-8859-1"
-      http-equiv="Content-Type">
-    <title>Windows Azure Projects on Github</title>
+    <meta charset="utf-8">
+    <title>Open source cloud frameworks, SDKs and contribution guidelines - Windows Azure Open Source</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the open source frameworks and SDKs for Windows Azure including our Java, PHP, Node.js, Python and other libraries. We also provide information and guidelines for contributing to our open source projects on GitHub. All Azure open source projects have a flexible Apache 2.0 license.">
+    <meta name="author" content="Windows Azure SDK">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/azureopensource.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="//az83882.vo.msecnd.net/favicon.ico">
   </head>
+
   <body>
-	<h1>Windows Azure Projects on Github</h1>
-	<p>Here is an overview of all Windows Azure projects hosted on Github. 
-	For additional information about Windows Azure and the services it offers
-	you can visit <a href="http://www.windowsazure.com">www.windowsazure.com</a><br/>
-	If you are interested in contributing to any of the projects below please
-	read the <a href="./guidelines.html">Contribution Guidelines</a> first.</p>
-	<h2><a href="https://github.com/WindowsAzure/azure-sdk-for-java">WindowsAzure/azure-sdk-for-java</a></h2>
-	<p>This repository contains Java libraries that allow you to take advantage of
-	Windows Azure's scalable cloud computing resources like table and blob storage as
-	well as Service Bus messaging.</p>
-	<h2><a href="https://github.com/WindowsAzure/azure-sdk-for-net">WindowsAzure/azure-sdk-for-net</a></h2>
-	<p>This repository contains .NET libraries that allow you to take advantage of
-	Windows Azure's scalable cloud computing resources like table and blob storage, messaging 
-	through Service Bus and distributed caching.</p>
-	<h2><a href="https://github.com/WindowsAzure/azure-sdk-for-node">WindowsAzure/azure-sdk-for-node</a></h2>
-	<p>This repository contains a set of Node.js packages that make it 
-	easy to access the Windows Azure storage and queue services.</p>
-	<h2><a href="https://github.com/WindowsAzure/azure-sdk-tools">WindowsAzure/azure-sdk-tools</a></h2>
-	<p>This repository contains a set of PowerShell commandlets that let you 
-	deploy Node.js application to Windows Azure from the command line.</p>
-	<h2><a href="https://github.com/WindowsAzure/iisnode">WindowsAzure/iisnode</a></h2>
-	<p>This repository contains an IIS extension that allows you to host Node.js 
-	applications on Windows.</p>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" style="padding:15px 15px 5px 15px;margin-top:-5px" href="//www.windowsazure.com/"><img 
+              src="azure/windowsazurelogo.png" style="width:218px;height:35px;border:0px"
+              alt="Windows Azure" title="Windows Azure" /></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Open Source Home</a></li>
+              <li><a href="guidelines.html">Contribute</a></li>
+              <li class="dropdown">
+                <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="projects.html">All projects</a></li>
+                  <li class="nav-header">Software dev Kits</li>
+                  <li><a href="projects.html#dotnet">.NET SDK</a></li>
+                  <li><a href="projects.html#nodejs">Node.js SDK</a></li>
+                  <li><a href="projects.html#java">Java SDK</a></li>
+                  <li><a href="projects.html#php">PHP SDK</a></li>
+                  <li><a href="projects.html#python">Python SDK</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Command line</li>
+                  <li><a href="projects.html#powershell">PowerShell</a></li>
+                  <li><a href="projects.html#cli">x-plat CLI</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">More projects</li>
+                  <li><a href="projects.html#iisnode">iisnode</a></li>
+                    <li><a href="projects.html#teams">Other teams</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">WindowsAzure.com</li>
+                  <li><a href="//www.windowsazure.com/en-us/documentation/">Documentation Center</a></li>
+                  <li><a href="//www.windowsazure.com/en-us/develop/reference/">REST Reference</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="hero-unit">
+        <h1>Hello, cloud developers!</h1>
+        <p>The Windows Azure SDK team is busy coding away frameworks and experiences to help 
+        make your projects successful.</p>
+          <p>We create SDKs that connect to Windows Azure services through REST wrappers 
+          and interfaces in the language of your choice - including .NET, Java, Node.js, 
+          Python, and others.</p>
+          <p>We accept your open source contributions, license our work with Apache 2.0, and use 
+          GitHub.</p>
+        <p><a href="guidelines.html" class="btn btn-primary">Learn how to contribute &raquo;</a></p>
+      </div>
+
+    </div>
+
+    <div class="social">
+        <div class="container">
+            <ul class="social-buttons">
+                <li><iframe src="http://ghbtns.com/github-btn.html?user=windowsazure&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
+                <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="Windows Azure open source rocks!" data-hashtags="opensource">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="span4">
+          <h2>Open Source</h2>
+          <p>Our frameworks &amp; libraries are developed in agile dev branches on GitHub.</p>
+          <p><a class="btn" href="http://github.com/windowsazure">//github.com/WindowsAzure &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Frameworks &amp; Projects</h2>
+          <p>We provide the low-level REST abstractions, sample code and documentation, and some higher-level functionality, hand-built in your language of choice.</p>
+          <p><a class="btn" href="projects.html">Our SDKs &amp; Projects &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Apache 2 License</h2>
+          <p>We strive to release our work under the permissive and open Apache 2.0 license.</p>
+          <p><a class="btn" href="http://opensource.org/licenses/Apache-2.0">Read the Apache 2.0 License &raquo;</a></p>
+       </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p class="pull-right"><a href="#top">Back to top</a></p>
+        <div class="links">
+          <a href="//www.windowsazure.com/">WindowsAzure.com</a> |
+          <a href="http://blogs.msdn.com/b/windowsazure/">Windows Azure Blog</a> |
+          <a href="https://twitter.com/windowsazure">@windowsazure</a> |
+          <a href="https://github.com/windowsazure/">GitHub</a> |
+          <a href="thanks.html">Thank you to our contributors</a>
+        </div>
+
+        <p><small>
+            &copy; Microsoft | 
+            <a href="http://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409">Privacy and Cookies</a> |
+            <a href="http://go.microsoft.com/fwlink/p/?linkid=222682&clcid=0x409">Trademarks</a>
+            </small></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>

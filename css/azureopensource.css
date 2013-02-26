@@ -1,0 +1,205 @@
+/* windowsazure.github.com css customizations
+-------------------------------------------------- */
+
+body {
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+code {
+    color: #333;
+}
+
+h3 {
+  font-size: 24.5px;
+  color:  #777;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.nav-tabs > .active > a {
+    background-color: #eee;
+    color:  #333;
+}
+
+.nav-tabs > .active > a:hover {
+    background-color: #eee;
+    color:  #333;
+}
+
+.azure-nav-list {
+    width: 228px;
+    margin: 30px 0 0;
+    padding: 0;
+}
+
+.azure-nav-list > li > a {
+  display: block;
+  width: 190px;
+  margin: 0 0 -1px;
+  padding: 4px 12px;
+}
+
+.azure-nav-list.affix {
+  top: 40px;
+}
+
+.small-sections section {
+    padding-top: 6px;
+}
+
+section {
+    padding-top: 42px;
+}
+
+.twitter-cards > tbody > tr > td > h4,
+.twitter-cards > tbody > tr > td > p {
+    text-align: center;
+}
+
+.twitter-cards > tbody >tr > td {
+    width: 33%;
+}
+
+.social {
+  text-align: center;
+}
+
+.social-buttons {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.social-buttons li {
+  display: inline-block;
+  padding: 5px 8px;
+  line-height: 1;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* Make tables spaced out a bit more */
+h2 + table,
+h3 + table,
+h4 + table,
+h2 + .row {
+  margin-top: 5px;
+}
+
+/* Responsive parts */
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+  .azure-nav-list {
+    width: 258px;
+  }
+  .azure-nav-list > li > a {
+    width: 230px; /* Override the previous IE8-9 hack */
+  }
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+  /* Unfloat brand */
+  body > .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* When affixed, space properly */
+  .azure-nav-list {
+    top: 0;
+    width: 218px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Adjust sidenav width */
+  .azure-nav-list {
+    width: 166px;
+    margin-top: 20px;
+  }
+  .azure-nav-list.affix {
+    top: 0;
+  }
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+
+  /* Sidenav */
+  .azure-nav-list {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .azure-nav-list.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+
+  /* Unfloat the back to top link in footer */
+  .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer p {
+    margin-bottom: 9px;
+  }
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  /* Remove padding above jumbotron */
+  body {
+    padding-top: 0;
+  }
+
+  /* Change up some type stuff */
+  h2 small {
+    display: block;
+  }
+
+  /* center align subhead text like the masthead */
+  .subhead h1,
+  .subhead p {
+    text-align: center;
+  }
+
+  /* Do our best to make tables work in narrow viewports */
+  table code {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* Tighten up footer */
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
