@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -45,6 +45,7 @@
                   <li><a href="projects.html#java">Java SDK</a></li>
                   <li><a href="projects.html#php">PHP SDK</a></li>
                   <li><a href="projects.html#python">Python SDK</a></li>
+                    <li><a href="projects.html#ruby">Ruby SDK</a></li>
                   <li class="divider"></li>
                   <li class="nav-header">Command line</li>
                   <li><a href="projects.html#powershell">PowerShell</a></li>
@@ -94,75 +95,103 @@
 	    read the <a href="./guidelines.html">Contribution Guidelines</a> first.</p>
         </section>
 
-        <section id="dotnet">
-        <h3><a href="https://github.com/WindowsAzure/azure-sdk-for-net">.NET</a></h3>
-        <ul class="inline">
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-net&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></li>
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-net&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></li>
-        </ul>
-        <p>This repository contains .NET libraries that allow you to take advantage of
-        Windows Azure's scalable cloud computing resources like table and blob storage, messaging 
-        through Service Bus and distributed caching.</p>
-        </section>
+      <table class="table">
+          <thead>
+              <tr>
+                  <th>SDK</th>
+                  <th colspan="2">GitHub</th>
+                  <th>Windows Azure Services</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><section id="dotnet"><h3><a href="https://github.com/WindowsAzure/azure-sdk-for-net">.NET</a></h3></section></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-net&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-net&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></td>
+                  <td><ul>
+                        <li>Storage - Blob, Table, Queue</li>
+                        <li>.NET CloudConfiguration</li>
+                        <li>Media Services</li>
+                  </ul></td>
+              </tr>
+              <tr>
+                  <td><section id="java"><h3><a href="https://github.com/WindowsAzure/azure-sdk-for-java">Java</a></h3></section></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-java&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-java&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></td>
+                  <td><ul>
+                          <li>Storage - Blob, Table, Queue</li>
+                          <li>Media Services</li>
+                          <li>Service Bus</li>
+                          <li>Service Runtime</li>
+                      </ul></td>
+              </tr>
+              <tr>
+                  <td><section id="nodejs"><h3><a href="https://github.com/WindowsAzure/azure-sdk-for-node">Node.js</a></h3></section></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-node&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-node&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></td>
+                  <td><ul>
+                          <li>Storage - Blob, Table, Queue</li>
+                          <li>Service Bus</li>
+                          <li>Service Management - Compute</li>
+                          <li>Service Management - Cloud Services</li>
+                          <li>Service Management - SQL Database</li>
+                          <li>Service Management - Web Sites</li>
+                          <li>Service Runtime</li>
+                          <li><strong>node-sqlserver: </strong>A Node.js driver that uses ODBC to communicate with SQL Azure.</li>
+                          <li><strong>socket.io-servicebus: </strong>Node.js adapter for Service Bus</li>
+                          <li><strong>wns: </strong>Node.js framework for sending Windows Notification Service (WNS) messages to Windows 8 devices.</li>
+                          <li><strong>mpns: </strong>Node.js framework for sending Microsoft Push Notification Service (MPNS) messages to Windows Phone devices.</li>
+                  </ul></td>
+              </tr>
+              <tr>
+                  <td><section id="php"><h3><a href="https://github.com/WindowsAzure/azure-sdk-for-php">PHP</a></h3></section></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-php&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-php&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></td>
+                  <td><ul>
+                          <li>Storage - Blob, Table, Queue</li>
+                          <li>Service Management - Compute</li>
+                          <li>Service Management - Cloud Services</li>
+                          <li>Service Runtime</li>
+                      </ul></td>
+              </tr>
+              <tr>
+                  <td><section id="python"><h3><a href="https://github.com/WindowsAzure/azure-sdk-for-python">Python</a></h3></section></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-python&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-python&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></td>
+                  <td><ul>
+                          <li>Storage - Blob, Table, Queue</li>
+                          <li>Service Bus</li>
+                          <li>Service Management - Compute</li>
+                          <li>Service Management - Cloud Services</li>
+                      </ul></td>
+              </tr>
+              <tr>
+                  <td><section id="ruby"><h3><a href="https://github.com/WindowsAzure/azure-sdk-for-ruby">Ruby</a></h3></section></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-ruby&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-ruby&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></td>
+                  <td>
+                      <ul>
+                          <li>Storage - Blob, Table, Queue</li>
+                          <li>Service Bus</li>
+                      </ul>
+                  </td>
+              </tr>
+              <tr>
+                  <td><section id="mobileservices"><h3><a href="https://github.com/WindowsAzure/azure-mobile-services">Mobile Services</a></h3></section></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-mobile-services&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></td>
+                  <td><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-mobile-services&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></td>
+                  <td><ul>
+                      <li>iOS</li>
+                      <li>Android</li>
+                      <li>JavaScript</li>
+                      <li>Windows Phone</li>
+                      <li>Windows Store</li>
+                      </ul></td>
+              </tr>
+          </tbody>
+      </table>
 
-        <section id="java">
-	    <h3><a href="https://github.com/WindowsAzure/azure-sdk-for-java">Java</a></h3>
-        <ul class="inline">
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-java&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></li>
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-java&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></li>
-        </ul>
-	    <p>This repository contains Java libraries that allow you to take advantage of
-	    Windows Azure's scalable cloud computing resources like table and blob storage as
-	    well as Service Bus messaging.</p>
-        </section>
-    
-        <section id="nodejs">
-        <h3><a href="https://github.com/WindowsAzure/azure-sdk-for-node">Node.js</a></h3>
-        <ul class="inline">
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-node&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></li>
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-node&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></li>
-        </ul>
-	    <p>This repository contains a set of Node.js packages that make it 
-	    easy to access the Windows Azure storage and queue services.</p>
-
-        <ul>
-            <li><strong>node-sqlserver: </strong>A Node.js driver that uses ODBC to communicate with SQL Azure.</li>
-            <li><strong>socket.io-servicebus: </strong>Node.js adapter for Service Bus</li>
-        </ul>
-        </section>
-
-        <section id="php">
-        <h3><a href="https://github.com/WindowsAzure/azure-sdk-for-php">PHP</a></h3>
-        <ul class="inline">
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-php&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></li>
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-php&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></li>
-        </ul>
-	    <p>The Windows Azure SDK for PHP developers.</p>
-        </section>
-                
-        <section id="python">
-        <h3><a href="https://github.com/WindowsAzure/azure-sdk-for-python">Python</a></h3>
-        <ul class="inline">
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-python&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></li>
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-sdk-for-python&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></li>
-        </ul>
-	    <p>The Windows Azure SDK for Python.</p>
-        </section>
-
-        <section id="mobileservices">
-        <h3><a href="https://github.com/WindowsAzure/azure-mobile-services">Mobile Services</a></h3>
-        <ul class="inline">
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-mobile-services&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></li>
-            <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=windowsazure&repo=azure-mobile-services&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></li>
-        </ul>
-        <p>With Windows Azure Mobile Services you can develop amazing Windows 8, Windows Phone, and iOS apps 
-        that use the cloud.</p>
-        </section>
-
-        <ul>
-            <li><strong>wns: </strong>Node.js framework for sending Windows Notification Service (WNS) messages to Windows 8 devices.</li>
-        </ul>
-
+        
         <hr />
 
         <section id="clis">
